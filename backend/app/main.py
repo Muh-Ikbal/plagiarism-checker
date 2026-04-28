@@ -73,6 +73,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# mendaftarkan limiter
 app.state.limiter = limiter
 # Beritahu FastAPI bagaimana cara merespon jika limit tercapai (Akan mengembalikan HTTP 429)
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
