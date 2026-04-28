@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>View of Dampak Evaluasi Penerapan Kurikulum Merdeka Terhadap Prestasi Belajar Siswa di Sekolah</title>
+
+	
+<meta name="generator" content="Open Journal Systems 3.2.1.4">
+	<link rel="stylesheet" href="https://jipp.unram.ac.id/plugins/themes/jpascaTheme/css/ash.min.css?v=3.2.1.4" type="text/css" /><link rel="stylesheet" href="https://jipp.unram.ac.id/index.php/jipp/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="https://jipp.unram.ac.id/lib/pkp/styles/fontawesome/fontawesome.css?v=3.2.1.4" type="text/css" /><style type="text/css">.pkp_structure_head { background: center / cover no-repeat url("https://jipp.unram.ac.id/plugins/themes/jpascaTheme/img/header.webp");}</style>
+	<script src="https://jipp.unram.ac.id/lib/pkp/lib/vendor/components/jquery/jquery.min.js?v=3.2.1.4" type="text/javascript"></script><script src="https://jipp.unram.ac.id/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js?v=3.2.1.4" type="text/javascript"></script><script src="https://jipp.unram.ac.id/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.2.1.4" type="text/javascript"></script><script src="https://jipp.unram.ac.id/plugins/themes/jpascaTheme/js/ash.bundle.min.js?v=3.2.1.4" type="text/javascript"></script><script src="https://jipp.unram.ac.id/plugins/themes/jpascaTheme/js/main.js?v=3.2.1.4" type="text/javascript"></script>
+</head>
+<body class="pkp_page_article pkp_op_view">
+
+		<header class="header_view">
+
+		<a href="https://jipp.unram.ac.id/index.php/jipp/article/view/2406" class="return">
+			<span class="pkp_screen_reader">
+									Return to Article Details
+							</span>
+		</a>
+
+		<a href="https://jipp.unram.ac.id/index.php/jipp/article/view/2406" class="title">
+			Dampak Evaluasi Penerapan Kurikulum Merdeka Terhadap Prestasi Belajar Siswa di Sekolah
+		</a>
+
+		<a href="https://jipp.unram.ac.id/index.php/jipp/article/download/2406/1360/12941" class="download" download>
+			<span class="label">
+				Download
+			</span>
+			<span class="pkp_screen_reader">
+				Download PDF
+			</span>
+		</a>
+
+	</header>
+
+	<script type="text/javascript">
+		// Creating iframe's src in JS instead of Smarty so that EZProxy-using sites can find our domain in $pdfUrl and do their rewrites on it.
+		$(document).ready(function() {
+			var urlBase = "https://jipp.unram.ac.id/plugins/generic/pdfJsViewer/pdf.js/web/viewer.html?file=";
+			var pdfUrl = "https:\/\/jipp.unram.ac.id\/index.php\/jipp\/article\/download\/2406\/1360\/12941";
+			$("#pdfCanvasContainer > iframe").attr("src", urlBase + encodeURIComponent(pdfUrl));
+		});
+	</script>
+
+	<div id="pdfCanvasContainer" class="galley_view">
+				<iframe src="" width="100%" height="100%" style="min-height: 500px;" title="pdf of Dampak Evaluasi Penerapan Kurikulum Merdeka Terhadap Prestasi Belajar Siswa di Sekolah" allowfullscreen webkitallowfullscreen></iframe>
+	</div>
+	
+</body>
+</html>

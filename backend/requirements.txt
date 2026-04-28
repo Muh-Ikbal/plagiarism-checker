@@ -1,0 +1,48 @@
+# --- Core Web Framework ---
+fastapi==0.112.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+
+# --- Database ---
+sqlalchemy==2.0.30
+psycopg2-binary==2.9.9
+alembic==1.13.1              # ← tambahan: migrasi skema DB
+
+# --- Auth & Security ---
+python-jose[cryptography]==3.3.0   # ← tambahan: JWT
+passlib[bcrypt]==1.7.4             # ← tambahan: hash password
+
+# --- Settings & Environment ---
+pydantic==2.7.1
+pydantic-settings==2.3.4           # ← tambahan: baca .env via BaseSettings
+python-dotenv==1.0.1
+
+# --- File Processing ---
+python-docx==1.1.0
+pymupdf       # ← ganti dari PyPDF2
+openpyxl==3.1.5
+
+
+# --- NLP & Plagiarism Detection ---
+scikit-learn==1.6.1
+numpy==1.26.4
+nltk==3.9.1
+sastrawi==1.0.1
+symspellpy==6.7.8
+scipy==1.11.4
+joblib==1.3.2
+
+# --- Background Jobs ---
+celery==5.4.0
+redis==5.0.4
+
+# --- Vector Search (aktifkan jika dokumen sudah ribuan) ---
+# faiss-cpu==1.8.0
+
+# --- Testing ---
+httpx==0.27.0                # ← tambahan: test HTTP client
+pytest==8.2.2                # ← tambahan
+pytest-asyncio==0.23.7       # ← tambahan: test async endpoint
+
+# web limitter
+slowapi==0.1.9
