@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Search, FileText, UploadCloud, Loader2, X, Type, Download, ChevronDown, ChevronUp, AlertTriangle, ShieldCheck, ShieldAlert, ExternalLink, SlidersHorizontal, BookOpen } from 'lucide-react';
+import { fetchWithAuth } from '@/lib/api';
 
 const API_BASE = 'http://localhost:8000';
 
@@ -163,7 +164,7 @@ export default function PlagiarismeView() {
       formData.append('content', plagText);
       formData.append('tolerance', String(tolerance));
 
-      const response = await fetch(`${API_BASE}/api/plagiarism/check-text`, {
+      const response = await fetchWithAuth(`${API_BASE}/api/plagiarism/check-text`, {
         method: 'POST',
         body: formData,
       });
@@ -204,7 +205,7 @@ export default function PlagiarismeView() {
       formData.append('tolerance', String(tolerance));
       formData.append('exclude_bibliography', String(excludeBibliography));
 
-      const uploadRes = await fetch(`${API_BASE}/api/plagiarism/check-document`, {
+      const uploadRes = await fetchWithAuth(`${API_BASE}/api/plagiarism/check-document`, {
         method: 'POST',
         body: formData,
       });

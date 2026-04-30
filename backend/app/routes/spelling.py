@@ -1,12 +1,14 @@
 import re
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
 from app.schemas.spelling_shcema import SpellCheckRequest, SpellCheckResponse, CorrectionDetail
 from app.service.spellcheck_service import spell_checker
+from app.models.user import User
+from app.service.auth_service import require_current_user
 
 router = APIRouter(prefix="/api/spelling", tags=["Spelling Checker"])
 
 @router.post("/check", response_model=SpellCheckResponse)
-def check_spelling(request: SpellCheckRequest):
+def check_spelling(request: SpellCheckRequest, user: User = Depends(require_current_user)):
     original_text = request.text
     tokens = re.findall(r'\b\w+\b|[^\w\s]|\s+', original_text)
     

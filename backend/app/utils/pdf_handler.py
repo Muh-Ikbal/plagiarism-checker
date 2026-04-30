@@ -35,6 +35,12 @@ def extract_text_and_coords(pdf_path: str, exclude_bibliography: bool = False) -
                         continue
                     
                     if exclude_bibliography:
+                        # --- PENGAMAN 1: ANTI DAFTAR ISI (TITIK-TITIK) ---
+                        # Jika teks mengandung 3 titik beruntun (contoh: "...."), 
+                        # ini dipastikan baris dari Daftar Isi. Langsung abaikan!
+                        if re.search(r'\.{3,}', raw_text):
+                            continue
+
                         # 1. Ambil 80 karakter pertama saja (untuk antisipasi teks tergabung)
                         raw_header_prefix = raw_text[:80].replace('\n', ' ').lower().strip()
                         
@@ -42,14 +48,19 @@ def extract_text_and_coords(pdf_path: str, exclude_bibliography: bool = False) -
                         clean_header = re.sub(r'[^a-z0-9\s]', '', raw_header_prefix)
                         clean_header = " ".join(clean_header.split())
                         
-                        # 3. Regex PERBAIKAN: Hilangkan '$' di belakang!
-                        # Kita hanya peduli apakah teks ini "DIMULAI DENGAN" daftar pustaka
+                        # --- PENGAMAN 2: ANTI DAFTAR ISI (NOMOR HALAMAN) ---
+                        # Jika teks bersihnya diakhiri oleh angka (contoh: "daftar pustaka 104")
+                        if re.search(r'\d+$', clean_header):
+                            continue
+                        
+                        # 3. Regex Utama: Hanya peduli apakah teks "DIMULAI DENGAN" daftar pustaka
                         pattern = r"^((bab\s+[a-z0-9]+\s+)|([a-z0-9]+\s+))?(daftar pustaka|referensi|bibliography|references)"
                         
-                        is_near_end = (page_num + 1) / total_pages > 0.4
+                        # --- PENGAMAN 3: BATAS HALAMAN 60% ---
+                        # Mencegah terhentinya proses di halaman-halaman awal (area Daftar Isi)
+                        is_near_end = (page_num + 1) / total_pages > 0.6
                         
                         # 4. Gunakan re.match (otomatis mendeteksi kecocokan dari ujung depan teks)
-                        # Hapus validasi length < 60 karena kita sudah memotong karakternya di awal
                         if is_near_end and re.match(pattern, clean_header):
                             print(f"🚩 Judul Referensi Terdeteksi Akurat di hal {page_num+1}. Ekstraksi dihentikan.")
                             stop_parsing = True

@@ -54,10 +54,13 @@ async def get_current_user(
 
     try:
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
-        user_id: int = payload.get("sub")
-        if user_id is None:
+        user_id_str = payload.get("sub")
+        if user_id_str is None:
             raise credentials_exception
-    except JWTError:
+        user_id = int(user_id_str)
+    except JWTError as e:
+        print(f"[AUTH DEBUG] JWT decode failed: {e}")
+        print(f"[AUTH DEBUG] SECRET_KEY used: '{settings.SECRET_KEY[:5]}...' (len={len(settings.SECRET_KEY)})")
         raise credentials_exception
 
     user = db.query(User).filter(User.id == user_id).first()

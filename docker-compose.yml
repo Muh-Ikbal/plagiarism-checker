@@ -9,6 +9,9 @@ services:
     ports:
       - "8000:8000"
     env_file: .env
+    environment:
+      - SECRET_KEY=wordlens_app_builder
+      - ACCESS_TOKEN_EXPIRE_MINUTES=10080
     volumes:
       - ./backend:/app
     depends_on:
@@ -53,6 +56,9 @@ services:
     command: celery -A app.tasks.celery_app worker --loglevel=info
     mem_limit: 4g               
     env_file: .env
+    environment:
+      - SECRET_KEY=wordlens_app_builder
+      - ACCESS_TOKEN_EXPIRE_MINUTES=10080
     volumes:
       - ./backend/app:/app/app
       - ./backend/app/uploads:/app/app/uploads

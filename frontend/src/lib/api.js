@@ -2,7 +2,7 @@
  * API utility — centralized API calls & token management.
  */
 
-const API_BASE_URL = "http://localhost:8000";
+export const API_BASE_URL = "http://localhost:8000";
 
 // ─── Token helpers ───
 export function getToken() {
@@ -32,7 +32,13 @@ export function setUser(user) {
   localStorage.setItem("wordlens_user", JSON.stringify(user));
 }
 
-// ─── Generic fetch wrapper ───
+// ─── Handle 401 globally ───
+function handle401() {
+  removeToken();
+  window.location.href = "/login";
+}
+
+// ─── Generic JSON fetch wrapper (untuk endpoint yang kirim/terima JSON) ───
 async function apiFetch(endpoint, options = {}) {
   const token = getToken();
   const headers = {
@@ -41,18 +47,60 @@ async function apiFetch(endpoint, options = {}) {
     ...options.headers,
   };
 
-  const res = await fetch(`${API_BASE_URL}${endpoint}`, {
-    ...options,
-    headers,
-  });
+  let res;
+  try {
+    res = await fetch(`${API_BASE_URL}${endpoint}`, {
+      ...options,
+      headers,
+    });
+  } catch (networkError) {
+    throw new Error("Gagal terhubung ke server. Pastikan backend sedang berjalan.");
+  }
 
-  const data = await res.json();
+  let data;
+  try {
+    data = await res.json();
+  } catch {
+    throw new Error(`Server mengembalikan respons tidak valid (HTTP ${res.status})`);
+  }
 
   if (!res.ok) {
+    const isAuthEndpoint = endpoint.startsWith("/api/auth/");
+    if (res.status === 401 && !isAuthEndpoint) {
+      handle401();
+      return; // prevent further execution
+    }
     throw new Error(data.detail || "Terjadi kesalahan pada server");
   }
 
   return data;
+}
+
+/**
+ * fetchWithAuth — Fetch wrapper untuk komponen yang pakai raw fetch (FormData, dll).
+ * Otomatis menambahkan Authorization header dan handle 401.
+ * TIDAK set Content-Type (biarkan browser set otomatis untuk FormData).
+ */
+export async function fetchWithAuth(url, options = {}) {
+  const token = getToken();
+  const headers = {
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    ...options.headers,
+  };
+
+  let res;
+  try {
+    res = await fetch(url, { ...options, headers });
+  } catch (networkError) {
+    throw new Error("Gagal terhubung ke server. Pastikan backend sedang berjalan.");
+  }
+
+  if (res.status === 401) {
+    handle401();
+    throw new Error("Sesi Anda telah berakhir. Silakan login kembali.");
+  }
+
+  return res;
 }
 
 // ─── Auth API ───
@@ -63,6 +111,7 @@ export const authApi = {
       body: JSON.stringify({ email, password }),
     });
     // simpan token & user
+    console.log("Response dari backend:", data);
     setToken(data.access_token);
     setUser(data.user);
     return data;
@@ -86,5 +135,13 @@ export const authApi = {
 
   getCurrentUser() {
     return getUser();
+  },
+};
+
+// ─── History API ───
+export const historyApi = {
+  async getUserHistory() {
+    const data = await apiFetch("/api/plagiarism/history/user");
+    return data;
   },
 };

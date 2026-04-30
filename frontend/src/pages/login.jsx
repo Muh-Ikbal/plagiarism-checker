@@ -25,7 +25,7 @@ export default function LoginPage() {
       if (data.user.role === 'admin') {
         navigate('/admin');
       } else {
-        navigate('/');
+        navigate('/dashboard');
       }
     } catch (err) {
       setError(err.message || 'Login gagal. Periksa email dan password Anda.');

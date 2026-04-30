@@ -19,6 +19,7 @@ from app.models.checkjob import CheckJob, JobStatus
 from app.models.sentencecomparison import SentenceComparison
 from app.models.report import PlagiarismReport, ReportDetail, Verdict
 from app.utils.limiter import limiter
+from app.service.auth_service import get_current_user, require_current_user
 
 
 router = APIRouter(prefix="/api/plagiarism", tags=["Plagiarism Checker"])
@@ -425,6 +426,7 @@ async def check_plagiarism(
     threshold: float = Form(0.5),
     exclude_bibliography: bool = Form(True),
     tolerance: float = Form(0, description="Toleransi minimum kontribusi sumber (dalam %). Sumber di bawah angka ini akan diabaikan."),
+    user: User = Depends(require_current_user),
     db: Session = Depends(get_db)
 ):
     ext = file.filename.lower().split('.')[-1]
@@ -432,8 +434,9 @@ async def check_plagiarism(
         raise HTTPException(status_code=400, detail="Format file harus PDF atau DOCX")
 
     # 1. Simpan Meta
+    user_id = user.id
     sub_doc = Document(title=title, original_filename=file.filename,
-                       doc_type=DocType.submission, status=DocStatus.processing)
+                       doc_type=DocType.submission, status=DocStatus.processing, user_id=user_id)
     db.add(sub_doc)
     db.flush()
 
@@ -458,7 +461,7 @@ async def check_plagiarism(
 
     sub_doc.file_path = final_pdf_path
     
-    job = CheckJob(source_doc_id=sub_doc.id,
+    job = CheckJob(source_doc_id=sub_doc.id, user_id=user_id,
                    similarity_threshold=threshold, status=JobStatus.queued)
     db.add(job)
     db.commit()
@@ -642,6 +645,7 @@ async def check_plagiarism_text_instan(
     content: str = Form(..., description="Teks hasil copy-paste (Maks 250 kata)"),
     threshold: float = Form(0.5),
     tolerance: float = Form(0, description="Toleransi minimum kontribusi sumber (dalam %). Sumber di bawah angka ini akan diabaikan."),
+    user: User = Depends(require_current_user),
     db: Session = Depends(get_db)
 ):
     """
@@ -916,3 +920,39 @@ async def view_reference_document(doc_id: int, db: Session = Depends(get_db)):
         media_type="application/pdf",
         headers={"Content-Disposition": f"inline; filename={doc.original_filename}"}
     )
+
+@router.get("/history/user")
+async def get_user_check_history(
+    user: User = Depends(require_current_user),
+    db: Session = Depends(get_db)
+):
+    """
+    Endpoint untuk mengambil riwayat pengecekan (CheckJobs) milik user yang sedang login.
+    """
+
+    jobs = db.query(CheckJob).filter(
+        CheckJob.user_id == user.id
+    ).order_by(CheckJob.created_at.desc()).all()
+
+    history_data = []
+    for job in jobs:
+        report_data = None
+        if job.report:
+            report_data = {
+                "overall_similarity_pct": job.report.overall_similarity_pct,
+                "verdict": job.report.verdict.value if hasattr(job.report.verdict, 'value') else job.report.verdict,
+            }
+        
+        history_data.append({
+            "id": job.id,
+            "document_title": job.source_doc.title if job.source_doc else "Unknown",
+            "status": job.status.value if hasattr(job.status, 'value') else job.status,
+            "created_at": job.created_at.isoformat() if job.created_at else None,
+            "finished_at": job.finished_at.isoformat() if job.finished_at else None,
+            "report": report_data
+        })
+
+    return {
+        "status": "success",
+        "history": history_data
+    }

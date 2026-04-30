@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SpellCheck, AlertCircle, CheckCircle2, Loader2, ChevronDown, ChevronUp } from 'lucide-react';
+import { fetchWithAuth } from '@/lib/api';
 
 export default function EjaanView() {
   const [ejaanText, setEjaanText] = useState('');
@@ -17,7 +18,7 @@ export default function EjaanView() {
     setActiveCandidateIndex(null);
 
     try {
-      const response = await fetch('http://localhost:8000/api/spelling/check', {
+      const response = await fetchWithAuth('http://localhost:8000/api/spelling/check', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
