@@ -7,10 +7,10 @@ const API_BASE = API_BASE_URL;
 
 function VerdictBadge({ verdict }) {
   const configs = {
-    clean:  { label: 'Bersih',  icon: ShieldCheck, bg: 'bg-emerald-100', text: 'text-emerald-700', border: 'border-emerald-200' },
-    low:    { label: 'Rendah',  icon: ShieldCheck, bg: 'bg-green-100',   text: 'text-green-700',   border: 'border-green-200' },
-    medium: { label: 'Sedang',  icon: ShieldAlert, bg: 'bg-amber-100',   text: 'text-amber-700',   border: 'border-amber-200' },
-    high:   { label: 'Tinggi',  icon: AlertTriangle, bg: 'bg-rose-100',  text: 'text-rose-700',    border: 'border-rose-200' },
+    clean: { label: 'Bersih', icon: ShieldCheck, bg: 'bg-emerald-100', text: 'text-emerald-700', border: 'border-emerald-200' },
+    low: { label: 'Rendah', icon: ShieldCheck, bg: 'bg-green-100', text: 'text-green-700', border: 'border-green-200' },
+    medium: { label: 'Sedang', icon: ShieldAlert, bg: 'bg-amber-100', text: 'text-amber-700', border: 'border-amber-200' },
+    high: { label: 'Tinggi', icon: AlertTriangle, bg: 'bg-rose-100', text: 'text-rose-700', border: 'border-rose-200' },
   };
   const config = configs[verdict?.toLowerCase()] || configs.clean;
   const Icon = config.icon;
@@ -24,10 +24,10 @@ function VerdictBadge({ verdict }) {
 
 function StatusBadge({ status }) {
   const configs = {
-    queued:     { label: 'Antrian',   bg: 'bg-slate-100',  text: 'text-slate-600' },
-    running:    { label: 'Proses',    bg: 'bg-blue-100',   text: 'text-blue-600' },
-    done:       { label: 'Selesai',   bg: 'bg-emerald-100', text: 'text-emerald-600' },
-    failed:     { label: 'Gagal',     bg: 'bg-rose-100',   text: 'text-rose-600' },
+    queued: { label: 'Antrian', bg: 'bg-slate-100', text: 'text-slate-600' },
+    running: { label: 'Proses', bg: 'bg-blue-100', text: 'text-blue-600' },
+    done: { label: 'Selesai', bg: 'bg-emerald-100', text: 'text-emerald-600' },
+    failed: { label: 'Gagal', bg: 'bg-rose-100', text: 'text-rose-600' },
   };
   const config = configs[status] || configs.queued;
   return (
@@ -201,13 +201,6 @@ export default function UserHistoryPage() {
 
                     {item.status === 'done' && (
                       <div className="flex gap-1.5">
-                        <button
-                          onClick={() => navigate(`/dashboard?viewReport=${item.id}`)}
-                          className="p-2 text-slate-400 hover:text-teal-600 hover:bg-teal-50 rounded-lg transition-colors"
-                          title="Lihat Detail"
-                        >
-                          <ExternalLink className="w-4 h-4" />
-                        </button>
                         <button
                           onClick={() => handleDownloadReport(item.id, item.document_title)}
                           className="p-2 text-slate-400 hover:text-teal-600 hover:bg-teal-50 rounded-lg transition-colors"

@@ -7,8 +7,8 @@ from sqlalchemy.orm import Session
 
 from app.database.session import get_db
 from app.models.user import User, UserRole
-from app.schemas.auth_schema import RegisterRequest, LoginRequest, TokenResponse, UserResponse
-from app.service.auth_service import hash_password, verify_password, create_access_token
+from app.schemas.auth_schema import RegisterRequest, LoginRequest, TokenResponse, UserResponse, ProfileUpdateRequest
+from app.service.auth_service import hash_password, verify_password, create_access_token, require_current_user
 
 router = APIRouter(prefix="/api/auth", tags=["Auth"])
 
@@ -83,4 +83,40 @@ async def login(req: LoginRequest, db: Session = Depends(get_db)):
             email=user.email,
             role=user.role.value,
         ),
+    )
+
+@router.put("/profile", response_model=UserResponse)
+async def update_profile(
+    req: ProfileUpdateRequest,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(require_current_user)
+):
+    """Update detail profil user yang sedang login."""
+    
+    # Check email duplicate (jika email diubah)
+    if req.email != current_user.email:
+        existing_email = db.query(User).filter(User.email == req.email).first()
+        if existing_email:
+            raise HTTPException(status_code=400, detail="Email sudah digunakan")
+            
+    # Check username duplicate (jika username diubah)
+    if req.username != current_user.username:
+        existing_username = db.query(User).filter(User.username == req.username).first()
+        if existing_username:
+            raise HTTPException(status_code=400, detail="Username sudah digunakan")
+
+    current_user.username = req.username
+    current_user.email = req.email
+    
+    if req.password:
+        current_user.password = hash_password(req.password)
+        
+    db.commit()
+    db.refresh(current_user)
+    
+    return UserResponse(
+        id=current_user.id,
+        username=current_user.username,
+        email=current_user.email,
+        role=current_user.role.value if hasattr(current_user.role, 'value') else current_user.role,
     )

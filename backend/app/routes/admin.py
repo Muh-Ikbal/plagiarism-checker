@@ -12,9 +12,11 @@ Pipeline Upload:
 
 import math
 from collections import Counter
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, Query, HTTPException
 from sqlalchemy.orm import Session
 from sqlalchemy import func
+from pydantic import BaseModel
+from typing import Optional
 
 from app.database.session import get_db
 from app.models.document import Document, DocType, DocStatus
@@ -108,4 +110,109 @@ async def get_check_history(
         # Math.ceil di Python menggunakan trik -(-a // b)
         "total_pages": max(1, -(-total // per_page)),
     }
+
+class UserUpdateRequest(BaseModel):
+    username: str
+    email: str
+    role: str
+    password: Optional[str] = None
+
+class UserStatusRequest(BaseModel):
+    is_active: bool
+
+@router.get("/users")
+async def get_users(
+    page: int = Query(1, ge=1),
+    per_page: int = Query(10, ge=1, le=100),
+    search: str = Query("", description="Cari berdasarkan username atau email"),
+    db: Session = Depends(get_db)
+):
+    """List semua user untuk manajemen user."""
+    query = db.query(User)
+    
+    if search:
+        query = query.filter(
+            (User.username.ilike(f"%{search}%")) |
+            (User.email.ilike(f"%{search}%"))
+        )
+        
+    query = query.order_by(User.created_at.desc())
+    
+    total = query.count()
+    users = query.offset((page - 1) * per_page).limit(per_page).all()
+    
+    return {
+        "users": [
+            {
+                "id": u.id,
+                "username": u.username,
+                "email": u.email,
+                "role": u.role.value if hasattr(u.role, 'value') else u.role,
+                "is_active": u.is_active,
+                "created_at": u.created_at.strftime("%d %b %Y") if u.created_at else ""
+            }
+            for u in users
+        ],
+        "total": total,
+        "page": page,
+        "per_page": per_page,
+        "total_pages": max(1, -(-total // per_page)),
+    }
+
+from app.service.auth_service import hash_password
+
+@router.put("/users/{user_id}")
+async def update_user(
+    user_id: int,
+    req: UserUpdateRequest,
+    db: Session = Depends(get_db)
+):
+    """Update detail user."""
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User tidak ditemukan")
+        
+    # Check email duplicate
+    existing_email = db.query(User).filter(User.email == req.email, User.id != user_id).first()
+    if existing_email:
+        raise HTTPException(status_code=400, detail="Email sudah digunakan oleh user lain")
+        
+    user.username = req.username
+    user.email = req.email
+    user.role = req.role
+    
+    if req.password:
+        user.password = hash_password(req.password)
+        
+    db.commit()
+    return {"message": "User berhasil diperbarui"}
+
+@router.patch("/users/{user_id}/status")
+async def update_user_status(
+    user_id: int,
+    req: UserStatusRequest,
+    db: Session = Depends(get_db)
+):
+    """Update status aktif/nonaktif user."""
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User tidak ditemukan")
+        
+    user.is_active = req.is_active
+    db.commit()
+    return {"message": f"Status user berhasil diubah menjadi {'Aktif' if req.is_active else 'Nonaktif'}"}
+
+@router.delete("/users/{user_id}")
+async def delete_user(
+    user_id: int,
+    db: Session = Depends(get_db)
+):
+    """Hapus user beserta data terkait."""
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User tidak ditemukan")
+        
+    db.delete(user)
+    db.commit()
+    return {"message": "User berhasil dihapus"}
 
