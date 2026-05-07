@@ -27,3 +27,8 @@ class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
     user: UserResponse
+
+class ProfileUpdateRequest(BaseModel):
+    username: str
+    email: str
+    password: Optional[str] = None

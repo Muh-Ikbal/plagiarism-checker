@@ -111,6 +111,5 @@ class PlagiarismService:
             batch_results.append(suspicious_matches)
             
         return batch_results
-
 # Inisialisasi service agar jadi Singleton
 plagiarism_checker = PlagiarismService()

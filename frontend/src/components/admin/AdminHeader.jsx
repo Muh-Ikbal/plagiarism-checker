@@ -3,11 +3,12 @@ import { useLocation } from 'react-router-dom';
 
 export default function AdminHeader() {
   const location = useLocation();
-  
+
   const getPageTitle = (path) => {
-    if (path === '/admin') return 'Dasbor';
+    if (path === '/admin') return 'Dashboard';
     if (path.startsWith('/admin/journals')) return 'Manajemen Jurnal Referensi';
     if (path.startsWith('/admin/dictionary')) return 'Manajemen Kamus';
+    if (path.startsWith('/admin/users')) return 'Manajemen Pengguna';
     if (path.startsWith('/admin/history')) return 'Riwayat Pengecekan';
     if (path.startsWith('/admin/settings')) return 'Konfigurasi';
     return '';

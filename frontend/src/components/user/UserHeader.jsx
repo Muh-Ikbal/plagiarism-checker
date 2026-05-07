@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Search, UserCircle, LogOut, Clock, SpellCheck, ShieldCheck, Menu, X } from 'lucide-react';
+import { Search, UserCircle, LogOut,BookOpen, Clock, SpellCheck, ShieldCheck, Menu, X } from 'lucide-react';
 import { authApi } from '@/lib/api';
 
 export default function UserHeader({ activeTab, setActiveTab }) {
@@ -38,7 +38,7 @@ export default function UserHeader({ activeTab, setActiveTab }) {
         <div className="flex justify-between h-16">
           <div className="flex items-center space-x-3">
             <div className="bg-teal-600 p-2 rounded-lg shadow-sm">
-              <Search className="w-5 h-5 text-white" />
+              <BookOpen className="w-5 h-5 text-white" />
             </div>
             <span className="font-bold text-slate-800 text-lg tracking-tight">
               Word<span className="text-teal-600">Lens</span>
@@ -78,6 +78,13 @@ export default function UserHeader({ activeTab, setActiveTab }) {
                 <p className="text-[11px] text-slate-500">{user?.email || ''}</p>
               </div>
             </div>
+            <button 
+              onClick={() => navigate('/dashboard/profile')}
+              className="p-2 text-slate-400 hover:text-teal-600 hover:bg-teal-50 rounded-lg transition-colors" 
+              title="Pengaturan Profil"
+            >
+              <UserCircle className="w-5 h-5" />
+            </button>
             <button 
               onClick={handleLogout}
               className="p-2 text-slate-400 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors" 
@@ -135,13 +142,25 @@ export default function UserHeader({ activeTab, setActiveTab }) {
                   <p className="text-[11px] text-slate-500 truncate max-w-[200px]">{user?.email || ''}</p>
                 </div>
               </div>
-              <button 
-                onClick={handleLogout}
-                className="p-2 text-rose-500 hover:bg-rose-50 rounded-lg transition-colors flex items-center" 
-                title="Keluar"
-              >
-                <LogOut className="w-5 h-5" />
-              </button>
+              <div className="flex items-center space-x-1">
+                <button 
+                  onClick={() => {
+                    navigate('/dashboard/profile');
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="p-2 text-slate-500 hover:bg-slate-50 rounded-lg transition-colors flex items-center" 
+                  title="Pengaturan Profil"
+                >
+                  <UserCircle className="w-5 h-5" />
+                </button>
+                <button 
+                  onClick={handleLogout}
+                  className="p-2 text-rose-500 hover:bg-rose-50 rounded-lg transition-colors flex items-center" 
+                  title="Keluar"
+                >
+                  <LogOut className="w-5 h-5" />
+                </button>
+              </div>
             </div>
           </div>
         </div>

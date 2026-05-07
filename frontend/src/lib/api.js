@@ -136,6 +136,16 @@ export const authApi = {
   getCurrentUser() {
     return getUser();
   },
+
+  async updateProfile(data) {
+    const response = await apiFetch("/api/auth/profile", {
+      method: "PUT",
+      body: JSON.stringify(data),
+    });
+    // Update local storage user data
+    setUser(response);
+    return response;
+  },
 };
 
 // ─── History API ───
@@ -143,5 +153,32 @@ export const historyApi = {
   async getUserHistory() {
     const data = await apiFetch("/api/plagiarism/history/user");
     return data;
+  },
+};
+
+// ─── User Management API (Admin) ───
+export const userManagementApi = {
+  async getUsers(page = 1, perPage = 10, search = "") {
+    return await apiFetch(`/api/admin/users?page=${page}&per_page=${perPage}&search=${encodeURIComponent(search)}`);
+  },
+  
+  async updateUser(userId, data) {
+    return await apiFetch(`/api/admin/users/${userId}`, {
+      method: "PUT",
+      body: JSON.stringify(data),
+    });
+  },
+
+  async updateUserStatus(userId, isActive) {
+    return await apiFetch(`/api/admin/users/${userId}/status`, {
+      method: "PATCH",
+      body: JSON.stringify({ is_active: isActive }),
+    });
+  },
+
+  async deleteUser(userId) {
+    return await apiFetch(`/api/admin/users/${userId}`, {
+      method: "DELETE",
+    });
   },
 };

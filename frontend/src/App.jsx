@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/landing'
 import UserDashboard from './pages/welcome'
 import UserHistoryPage from './pages/user-history'
+import UserProfile from './pages/user-profile'
 import SpellCheckPage from './pages/spell-check'
 import UserLayout from './components/user/UserLayout'
 import AdminLayout from './components/admin/AdminLayout'
@@ -11,6 +12,7 @@ import AdminJournals from './pages/admin/journals'
 import AdminDictionary from './pages/admin/dictionary'
 import AdminHistory from './pages/admin/history'
 import AdminSettings from './pages/admin/settings'
+import AdminUsers from './pages/admin/users'
 import LoginPage from './pages/login'
 import SignUpPage from './pages/signup'
 import ProtectedRoute from './components/ProtectedRoute'
@@ -33,6 +35,7 @@ function App() {
         }>
           <Route index element={<UserDashboard />} />
           <Route path="history" element={<UserHistoryPage />} />
+          <Route path="profile" element={<UserProfile />} />
         </Route>
 
         <Route path="/spell-check" element={
@@ -48,6 +51,7 @@ function App() {
           </ProtectedRoute>
         }>
           <Route index element={<AdminDashboard />} />
+          <Route path="users" element={<AdminUsers />} />
           <Route path="journals" element={<AdminJournals />} />
           <Route path="dictionary" element={<AdminDictionary />} />
           <Route path="history" element={<AdminHistory />} />
