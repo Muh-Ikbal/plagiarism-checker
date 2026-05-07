@@ -1,0 +1,201 @@
+id,text
+1,"Kecerdasan buatan, juga disebut kecerdasan artifisial atau akal imitasi (bahasa Inggris: artificial intelligence, AIcode: en is deprecated , dapat diterjemahkan menjadi inteligensi artifisial), adalah kecerdasan yang ditambahkan kepada suatu sistem yang bisa diatur dalam konteks ilmiah."
+2,"Andreas Kaplan dan Michael Haenlein mendefinisikan kecerdasan buatan sebagai ""kemampuan sistem untuk menafsirkan data eksternal dengan benar, untuk belajar dari data tersebut, dan menggunakan pembelajaran tersebut guna mencapai tujuan dan tugas tertentu melalui adaptasi yang luwes""."
+3,Kecerdasan diciptakan dan dimasukkan ke dalam komputer agar dapat melakukan pekerjaan seperti yang dapat dilakukan manusia.
+4,"Beberapa macam bidang yang menggunakan kecerdasan buatan antara lain sistem pakar, permainan komputer, logika kabur, jejaring saraf tiruan, dan robotika."
+5,"Secara teknis, kecerdasan buatan adalah model statistik yang digunakan untuk mengambil keputusan dengan menggeneralisir karakteristik dari suatu objek berbasis data yang kemudian dipasang di berbagai perangkat elektronik."
+6,"Banyak hal yang kelihatannya sulit untuk kecerdasan manusia, tetapi untuk informatika relatif tidak bermasalah."
+7,"Seperti contoh: mentransformasikan persamaan, menyelesaikan persamaan integral, atau membuat permainan catur."
+8,"Di sisi lain, hal yang bagi manusia kelihatannya menuntut sedikit kecerdasan, sampai sekarang masih sulit untuk diwujudkan dalam Informatika."
+9,"Walaupun AI memiliki konotasi fiksi ilmiah yang kuat, AI membentuk cabang yang sangat penting pada ilmu komputer, berhubungan dengan perilaku, pembelajaran dan adaptasi yang cerdas dalam sebuah mesin."
+10,Penelitian dalam AI menyangkut pembuatan mesin dan program komputer untuk mengotomatiskan tugas-tugas yang membutuhkan perilaku cerdas.
+11,"Termasuk contohnya adalah pengendalian, perencanaan dan penjadwalan, kemampuan untuk menjawab diagnosis dan pertanyaan pelanggan, serta pengenalan tulisan tangan, suara, dan wajah."
+12,"Hal-hal seperti itu telah menjadi disiplin ilmu tersendiri, yang memusatkan perhatian pada penyediaan solusi masalah kehidupan yang nyata."
+13,"Sistem AI sekarang ini sering digunakan dalam bidang ekonomi, sains, obat-obatan, teknik, dan militer, seperti yang telah dibangun dalam beberapa penerapan peranti lunak komputer rumah dan video gim (contohnya NPC)."
+14,"Kecerdasan buatan ini bukan hanya ingin mengerti apa itu sistem kecerdasan, tetapi juga membangunnya."
+15,"AI konvensional kebanyakan melibatkan metode-metode yang sekarang digolongkan sebagai pembelajaran mesin, yang ditandai dengan formalisme dan analisis statistik."
+16,"Dikenal juga sebagai AI simbolis, AI logis, AI murni dan AI cara lama (GOFAI, Good Old Fashioned Artificial Intelligence)."
+17,Sebuah sistem pakar dapat mengolah sejumlah besar informasi yang diketahui dan menyediakan kesimpulan-kesimpulan berdasarkan pada informasi-informasi tersebut.
+18,"Pembelajaran ini berdasarkan pada data empiris dan dikaitkan dengan AI non-simbolis, AI yang tak teratur dan perhitungan lunak."
+19,"Komputasi Evolusioner: menerapkan konsep-konsep yang terinspirasi secara biologis seperti populasi, mutasi dan Sintasan yang paling layak untuk menghasilkan pemecahan masalah yang lebih baik."
+20,Aturan inferensi pakar dapat dibangkitkan melalui jejaring saraf atau aturan produksi dari pembelajaran statistik seperti dalam ACT-R.
+21,Sebuah pendekatan baru yang menjanjikan disebutkan bahwa penguatan kecerdasan mencoba untuk mencapai kecerdasan buatan dalam proses pengembangan evolusioner sebagai efek samping dari penguatan kecerdasan manusia melalui teknologi.
+22,"Pada awal abad 17, René Descartes mengemukakan bahwa tubuh hewan bukanlah apa-apa melainkan hanya mesin-mesin yang rumit."
+23,Blaise Pascal menciptakan mesin penghitung digital mekanis pertama pada 1642.
+24,"Pada abad 19, Charles Babbage dan Ada Lovelace bekerja pada mesin penghitung mekanis yang dapat diprogram."
+25,"Bertrand Russell dan Alfred North Whitehead menerbitkan Principia Mathematica, yang merombak logika formal."
+26,"Warren McCulloch dan Walter Pitts menerbitkan ""Kalkulus Logis Gagasan yang tetap ada dalam Aktivitas "" pada 1943 yang meletakkan fondasi untuk jejaring saraf."
+27,Program AI pertama yang bekerja ditulis pada 1951 untuk menjalankan mesin Ferranti Mark I di University of Manchester (UK): sebuah program permainan naskah yang ditulis oleh Christopher Strachey dan program permainan catur yang ditulis oleh Dietrich Prinz.
+28,"John McCarthy membuat istilah ""kecerdasan buatan "" pada konferensi pertama yang disediakan untuk pokok persoalan ini, pada 1956."
+29,John McCarthy juga menemukan dan sebagai pengebang bahasa pemrograman Lisp.
+30,Alan Turing memperkenalkan Uji Turing sebagai sebuah cara untuk mengoperasionalkan test perilaku cerdas.
+31,"Joseph Weizenbaum membangun ELIZA, sebuah chatterbot yang menerapkan psikoterapi Rogerian."
+32,"Pada tahun tersebut, sebuah konferensi yang dikenal sebagai Konferensi Dartmouth diadakan di Dartmouth College di Amerika Serikat."
+33,Konferensi ini dianggap sebagai titik awal dari perkembangan kecerdasan buatan sebagai bidang penelitian yang mandiri.
+34,"Selama tahun 1960-an dan 1970-an, Joel Moses mendemonstrasikan kekuatan pertimbangan simbolis untuk memadukan masalah di dalam program Macsyma, program berbasis pengetahuan yang sukses pertama kali dalam bidang matematika."
+35,"Marvin Minsky dan Seymour Papert menerbitkan Perceptrons, yang mendemostrasikan batas jejaring saraf sederhana dan Alain Colmerauer mengembangkan bahasa komputer Prolog."
+36,Ted Shortliffe mendemonstrasikan kekuatan sistem berbasis aturan untuk representasi pengetahuan dan inferensi dalam diagnosis dan terapi medis yang kadang kala disebut sebagai sistem pakar pertama.
+37,Hans Moravec mengembangkan kendaraan terkendali komputer pertama untuk mengatasi jalan berintang yang kusut secara mandiri.
+38,"Pada tahun 1980-an, jaringan saraf digunakan secara meluas dengan algoritma perambatan balik, pertama kali diterangkan oleh Paul John Werbos pada 1974."
+39,"Pada tahun 1982, para ahli fisika seperti Hopfield menggunakan teknik-teknik statistika untuk menganalisis sifat-sifat penyimpanan dan optimasi pada jejaring saraf."
+40,"Para ahli psikologi, David Rumelhart dan Geoff Hinton, melanjutkan penelitian mengenai model jejaring saraf pada memori."
+41,Pada tahun 1985-an sedikitnya empat kelompok riset menemukan kembali algoritma pembelajaran propagansi balik.
+42,Algoritme ini berhasil diimplementasikan ke dalam ilmu komputer dan psikologi.
+43,Tahun 1990-an ditandai perolehan besar dalam berbagai bidang AI dan demonstrasi berbagai macam aplikasi.
+44,"Lebih khusus Deep Blue, sebuah komputer permainan catur, mengalahkan Garry Kasparov dalam sebuah pertandingan 6 game yang terkenal pada tahun 1997."
+45,DARPA menyatakan bahwa biaya yang disimpan melalui penerapan metode AI untuk unit penjadwalan dalam Perang Teluk pertama telah mengganti seluruh investasi dalam penelitian AI sejak tahun 1950 pada pemerintah AS.
+46,"Tantangan Hebat DARPA, yang dimulai pada 2004 dan berlanjut hingga hari ini, adalah sebuah pacuan untuk hadiah $2 juta di mana kendaraan dikemudikan sendiri tanpa komunikasi dengan manusia, menggunakan GPS, komputer dan susunan sensor yang canggih, melintasi beberapa ratus mil daerah gurun yang menantang."
+47,Perdebatan tentang AI yang kuat dengan AI yang lemah masih menjadi topik hangat di antara filosof AI.
+48,"Roger Penrose dalam bukunya The Emperor's New Mind dan John Searle dengan eksperimen pemikiran ""ruang China"" berargumen bahwa kesadaran sejati tidak dapat dicapai oleh sistem logis formal, sementara Douglas Hofstadter dalam Gödel, Escher, Bach dan Daniel Dennett dalam Consciousness Explained memperlihatkan dukungannya atas fungsionalisme."
+49,"Dalam pendapat banyak pendukung AI yang kuat, kesadaran buatan dianggap sebagai Cawan Suci kecerdasan buatan."
+50,"Dalam fiksi sains, AI umumnya dilukiskan sebagai kekuatan masa depan yang akan mencoba menggulingkan otoritas manusia seperti dalam HAL 9000, Skynet, Colossus and The Matrix atau sebagai penyerupaan manusia untuk memberikan layanan seperti C-3PO, Data, the Bicentennial Man, the Mechas dalam A."
+51,"Sifat dominasi dunia AI yang tak dapat dielakkan, kadang-kadang disebut ""the Singularity"", juga dibantah oleh beberapa penulis sains seperti Isaac Asimov, Vernor Vinge dan Kevin Warwick."
+52,"Dalam pekerjaan seperti manga Ghost in the Shell-nya orang Jepang, keberadaan mesin cerdas mempersoalkan definisi hidup sebagai organisme lebih dari sekadar kategori entitas mandiri yang lebih luas, membangun konsep kecerdasan sistemik yang bergagasan."
+53,"Seri televisi BBC Blake's 7 menonjolkan sejumlah komputer cerdas, termasuk Zen (Blake's 7), komputer kontrol pesawat bintang Liberator (Blake's 7); Orac, superkomputer lanjut tingkat tinggi dalam kotak perspex portabel yang mempunyai kemampuan memikirkan dan bahkan memprediksikan masa depan; dan Slave, komputer pada pesawat bintang Scorpio."
+54,"Saat ini, Artificial Intelligence (AI) sudah ada dalam aktivitas sehari-hari manusia, seperti toko online yang menggunakan Artificial Intelligence (AI) untuk merekomendasikan suatu produk kepada pengguna dan untuk memahami semua ucapan pengguna saat menggunakan aplikasi asisten virtual seperti Amazon Alexa dan Apple Siri."
+55,"Selain itu, Artificial Intelligence (AI) juga digunakan untuk memanipulasi sebuah foto."
+56,"Di seluruh dunia ada berbagai contoh negara (termasuk: Jerman, Amerika, Inggris, dan India) di mana penerapan kecerdasan buatan yang dianggap salah oleh pemerintah telah menimbulkan konsekuensi sosial yang dramatis di berbagai bidang seperti imigrasi, penegakan hukum, dan jaminan sosial."
+57,"Menurut Ouyang dan Jiao, ada tiga paradigma penggunaan kecerdasan buatan dalam dunia pendidikan."
+58,"Pertama, AI-Directed, yaitu kecerdasan buatan sebagai sumber pengetahuan dan mengarahkan proses pembelajaran dan memosisikan peserta didik hanya sebagai penerima."
+59,"Kedua, AI-Supported, yaitu memosisikan kecerdasan buatan sebagai alat bantu dan peserta didik sebagai mitra (kolaborator) untuk mendapat hasil belajar yang lebih baik."
+60,"Ketiga, AI-Empowered, yaitu peserta didik diposisikan sebagai agen utama dalam dunia pendidikan yang menggunakan kecerdasan buatan untuk meningkatkan kecerdasan manusia."
+61,"Indonesia, dengan nama resmi Republik Indonesia, adalah sebuah negara di Asia Tenggara dan Oseania, yang terletak di antara Samudra Hindia dan Samudra Pasifik."
+62,"Letak geografis negara ini secara maritim diapit oleh Samudra Hindia di sisi barat daya dan Samudra Pasifik di sisi timur laut, juga merupakan negara di ujung tenggara wilayah Asia."
+63,"Secara daratan berada di antara superbenua Afro-Eurasia dan daratan benua Oseania (Australia), juga menjadi salah satu negara tropis yang dilalui oleh garis ekuator khatulistiwa."
+64,"Indonesia merupakan negara kepulauan yang membentang paling luas dan menjadi negara dengan pulau terbanyak di muka bumi, dengan jumlah pulau sebanyak 17."
+65,"Selain itu, Indonesia juga menjadi negara berpenduduk terbanyak ke-4 di dunia dengan total penduduk yang tercatat lembaga pemerintah BPS telah melebihi 275."
+66,"Indonesia adalah salah satu negara multirasial, multietnis, multikultural, dan multiteisme."
+67,Indonesia berbatasan dengan sejumlah negara di Asia Tenggara dan Oseania.
+68,"Indonesia berbatasan di wilayah darat dengan Malaysia di Pulau Kalimantan dan Sebatik, dengan Papua Nugini di Pulau Papua, dan dengan Timor Leste di Pulau Timor."
+69,"Negara yang hanya berbatasan laut dengan Indonesia adalah Singapura, Filipina, Australia, Thailand, Vietnam, Palau, dan Wilayah Persatuan Kepulauan Andaman dan Nikobar, India."
+70,"Indonesia adalah negara kesatuan dengan bentuk pemerintahan republik berdasarkan konstitusi yang sah, yaitu Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 (UUD 1945)."
+71,"Berdasarkan UUD 1945 pula, Dewan Perwakilan Rakyat (DPR), Dewan Perwakilan Daerah (DPD), dan Presiden dicalonkan lalu dipilih melalui pemilihan umum."
+72,"Pada tanggal 18 Januari 2022, Pemerintah Indonesia menetapkan Ibu Kota Nusantara yang berada di Pulau Kalimantan, yang menempati wilayah Kabupaten Penajam Paser Utara, untuk menggantikan Jakarta sebagai ibu kota yang baru."
+73,"Peradaban Indonesia telah dipengaruhi dan bercampur dengan sistem bangsa-bangsa pendatang maupun misi ekspansif imperium dunia semisal peradaban bangsa Tionghoa (China), India, Persia, Belanda, Jepang, hingga Arab."
+74,"Gugusan pulau Indonesia telah menjadi wilayah perdagangan penting sejak abad ke-7, yaitu sejak berdirinya Sriwijaya dan masifnya eksplorasi lintas samudera oleh para pengembara Austronesia, Asia, hingga Eropa yang singgah di pulau Nusantara."
+75,"Akan tetapi, catatan sejarah membuktikan bahwa peradaban dan ajaran asli Indonesia berakar pada sistem animisme dan dinamisme."
+76,Tepatnya pada filosofi penghormatan terhadap roh nenek moyang dan konsep relasi sakral simbiosis melalui upacara persembahan kepada makhluk-makhluk yang dianggap sakral.
+77,Untuk menjaga keseimbangan kehidupan manusia di alam agar tetap terpelihara serta terhindar dari bencana yang disebabkan oleh tindakan sewenang-wenang sebagian pihak.
+78,"Ajaran kepercayaan umumnya terpusat pada suku-suku pedalaman seperti sistem Kejawen suku Jawa, Dayak di Kalimantan dan Tana Toraja di Sulawesi yang dilestarikan ribuan tahun sebelum agama besar dunia datang ke bumi Nusantara."
+79,"Agama pendatang dari Semenanjung India Hinduisme-Buddhisme tumbuh, berkembang, dan berasimilasi di Kepulauan Indonesia pada awal abad ke-4 hingga abad ke-13 Masehi dengan mewariskan bahasa Sansekerta dan pilar-pilar budaya dan bahasa di Kepulauan Nusantara."
+80,"Setelah itu, para pedagang sufi dan Islam sunni membawa agama dan kebudayaan Islam sekitar abad ke-8 hingga abad ke-16."
+81,"Pada akhir abad ke-15, bangsa-bangsa Eropa datang ke Kepulauan Indonesia dan berperang untuk memonopoli perdagangan rempah-rempah di Maluku semasa Zaman Penjelajahan."
+82,"Setelah berada di bawah kolonial Belanda, Indonesia yang saat itu bernama Hindia Belanda, memproklamasikan kemerdekaan pada akhir Perang Dunia II, tepatnya pada tanggal 17 Agustus 1945."
+83,"Selanjutnya, Indonesia mendapat berbagai tantangan dan persoalan berat, mulai dari bencana alam, praktik korupsi yang masif, konflik sosial, gerakan separatisme, proses demokratisasi, dan periode pembangunan, perubahan dan perkembangan sosial–ekonomi–politik, serta modernisasi yang pesat."
+84,300 etnis dan 700 bahasa lokal ataupun dialek daerah di Nusantara.
+85,Indonesia mengedepankan Adat istiadat dan budaya lokal sebagai penguatan provinsi.
+86,"Berdasarkan rumpun bangsa, Indonesia terdiri atas bangsa asli yakni Austronesia dan Melanesia."
+87,Bangsa Austronesia yang terbesar jumlahnya lebih banyak mendiami Indonesia bagian barat.
+88,Dengan suku Jawa dan Sunda membentuk kelompok suku bangsa terbesar dengan persentase mencapai 57% dari seluruh penduduk Indonesia.
+89,"Semboyan nasional Indonesia, ""Bhinneka Tunggal Ika"" (Beraneka ragam tetapi bersatu), bermakna keberagaman sosial-budaya yang membentuk satu kesatuan negara."
+90,"Selain memiliki penduduk yang padat dan wilayah yang luas, Indonesia memiliki flora-fauna yang mendukung tingkat keanekaragaman hayati terbesar ke-2 di dunia, di bawah Brazil."
+91,Kata Indonesia berasal dari bahasa Yunani kuno yaitu Indus yang merujuk kepada Sungai Indus di India dan nesos yang berarti pulau.
+92,"Jadi, kata Indonesia berarti wilayah kepulauan India, atau kepulauan yang berada di wilayah Hindia; ini merujuk kepada persamaan antara dua bangsa tersebut (India dan Indonesia)."
+93,"Pada tahun 1850, George Windsor Earl, seorang etnolog berkebangsaan Inggris, awalnya mengusulkan istilah Indunesia dan Malayunesia untuk penduduk Kepulauan Hindia atau Kepulauan Melayu."
+94,"Murid Earl, James Richardson Logan, menggunakan kata Indonesia sebagai sinonim dari Kepulauan India."
+95,"Namun, penulisan akademik Belanda di media Hindia Belanda tidak menggunakan kata Indonesia, tetapi istilah Kepulauan Melayu (Maleische Archipel); Hindia Timur Belanda (Nederlandsch Oost Indië), atau Hindia (Indië); Timur (de Oost); dan bahkan Insulinde (istilah ini diperkenalkan tahun 1860 dalam novel Max Havelaar (1859) yang ditulis oleh Multatuli mengenai kritik terhadap kolonialisme Belanda)."
+96,"Sejak tahun 1900, nama Indonesia menjadi lebih umum pada lingkungan akademik di luar Belanda, dan golongan nasionalis Indonesia menggunakannya untuk ekspresi politik."
+97,"Adolf Bastian dari Universitas Berlin memasyarakatkan nama ini melalui buku Indonesien oder die Inseln des Malayischen Archipels, 1884–1894."
+98,"Pelajar Indonesia pertama yang menggunakannya ialah Suwardi Suryaningrat (Ki Hadjar Dewantara), ketika ia mendirikan kantor berita di Belanda yang bernama Indonesisch Pers Bureau pada tahun 1913."
+99,Daratan Indonesia terbentuk melalui berbagai aktivitas tektonis yang sangat rumit sejak awal masa Kenozoikum (± 66 juta tahun lalu).
+100,Permukaan laut global yang turun sekitar 130 meter dibandingkan kini pada periode glasial terakhir (±115.
+101,"700 tahun lalu) kemudian memunculkan tiga kawasan geografis: Daratan Sunda yang terhubung dengan benua Asia, Daratan Sahul yang terhubung dengan benua Australia, serta Kepulauan Wallacea yang diperantarai oleh lautan dalam."
+102,"000 tahun yang lalu, letusan dahsyat berskala VEI-8 terjadi pada Gunung Toba (sekarang menjadi Danau Toba)."
+103,Letusan tersebut konon menjadi letusan gunung berapi terbesar yang berhasil diteliti.
+104,Perubahan iklim yang ditimbulkannya diperkirakan menjadi penyebab populasi manusia modern dunia hampir seluruhnya musnah dan pergerakan migrasi manusia sempat terhenti pada subkala Pleistosen Akhir.
+105,"000 tahun lalu), permukaan laut naik setinggi 60 meter hanya dalam kurun waktu lima milenium."
+106,"Akibatnya, daratan yang lebih rendah terendam dan membentuk perairan dangkal, sementara daratan yang lebih tinggi terpisah-pisah menjadi pulau-pulau yang lebih kecil."
+107,"Dari kumpulan fosil manusia purba Homo erectus (atau manusia Jawa) dan Homo floresiensis (""manusia Flores"") yang pernah menetap di Indonesia, kuat dugaan bahwa kepulauan Indonesia telah dihuni oleh manusia purba tersebut sekurang-kurangnya antara dua juta sampai 500."
+108,Manusia purba tersebut kemudian berangsur-angsur punah seiring dengan kedatangan manusia modern (Homo sapiens) di kepulauan Indonesia.
+109,Teori Gelombang migrasi manusia modern pertama kali sampai di kepulauan Indonesia melalui jalur darat sekitar 60.
+110,"500 SM, bangsa Austronesia yang berasal dari Taiwan tiba melalui jalur laut dan menetap di kepulauan Indonesia."
+111,"Sebagian bangsa Melanesia yang telah ada lebih dahulu terdesak ke wilayah-wilayah timur jauh, sementara sebagian lagi berasimilasi dengan pendatang tersebut."
+112,Manusia yang menetap tersebut kemudian mengembangkan budaya bercocok tanam dan melaut.
+113,"Kandis diduga merupakan kerajaan tertua di Nusantara (kepulauan Indonesia) yang berdiri pada abad ke-1 SM dan terletak di daerah yang saat ini menjadi wilayah Provinsi Riau, tetapi keberadaannya masih sering diperdebatkan oleh para sejarawan, karena tidak adanya bukti yang jelas atas kerajaan ini."
+114,"Keberadaan Salakanagara yang berdiri pada abad ke-1 Masehi di daerah sekitar Cianjur, Jawa Barat juga masih menjadi perdebatan oleh para ahli karena kurangnya bukti-bukti sejarah, meskipun kerajaan ini merupakan cikal bakal Tarumanagara."
+115,"Dua kerajaan tertua Nusantara yang memiliki bukti-bukti sejarah adalah Kutai Martapura di wilayah Kalimantan Selatan saat ini dan Tarumanagara di wilayah barat Pulau Jawa, yang sama-sama berdiri pada abad ke-4 Masehi."
+116,"Kedua kerajaan tersebut dibuktikan memiliki corak Hindu-Buddha, sehingga dapat dipastikan bahwa Agama Hindu dan Agama Buddha telah berkembang di Nusantara sekurang-kurangnya dari abad ke-4 M."
+117,Banyak kerajaan bercorak Hindu-Buddha lainnya yang kemudian terbentuk setelah itu.
+118,"Sriwijaya, yang berbentuk kedatuan dan bercorak Buddha, berdiri di Nusantara pada abad ke-7 Masehi, kemudian berkembang menjadi salah satu kemaharajaan terbesar di Nusantara, serta negara monarki dengan masa berdiri terlama di Asia Tenggara."
+119,"Pada masa kejayaannya, Sriwijaya melingkupi Sumatra, Malaya, Kra, Jawa, Kalimantan, Kamboja, dan Vietnam, serta berkuasa dalam mengendalikan aktivitas pelayaran dan perdagangan di Selat Malaka yang merupakan jalur pelayaran penting di dunia."
+120,Banyak budaya asing yang memengaruhi dan berasimilasi dengan budaya-budaya lokal.
+121,"Pada tahun 718, Raja Sriwijaya berikirim surat dengan Khalifah Umar bin Abdul Aziz dari Dinasti Umayyah di Damaskus."
+122,"Sejak diperintah oleh Balaputradewa pada pertengahan abad ke-9, Sriwijaya juga berada di bawah kekuasaan Wangsa Sailendra."
+123,"Nama Sriwijaya diperkirakan mulai meredup dan runtuh pada awal abad ke-11 dan digantikan oleh Dharmasraya, lalu oleh Pagaruyung pada abad ke-14."
+124,"Medang, yang diperintah oleh Wangsa Sailendra, berdiri di wilayah Jawa Tengah saat ini pada abad ke-8."
+125,"Pada abad ke-10, pusat pemerintahannya dipindahkan ke Jawa Timur dan para penguasa setelah kepindahan tersebut dikelompokkan dalam Wangsa Isyana."
+126,"Pada tahun 1016, Medang runtuh akibat pemberontakan yang menewaskan raja terakhir beserta banyak kerabatnya."
+127,"Airlangga, menantu raja tersebut, membangun ulang kerajaan dan mendirikan negara Kahuripan pada tahun 1019, yang kemudian terpecah menjadi Kadiri dan Janggala pada tahun 1042."
+128,Ken Arok dari Wangsa Rajasa kemudian menaklukkan Kadiri dan mendirikan Singasari pada tahun 1222.
+129,"Singasari runtuh pada tahun 1292 akibat pemberontakan yang dipimpin oleh Jayakatwang (sisa Wangsa Isyana), tetapi berhasil ditumpas setahun kemudian oleh Raden Wijaya."
+130,"Raden Wijaya dari Wangsa Rajasa mendirikan Majapahit yang bercorak Syiwa-Buddha pada tahun 1293, yang kemudian berkembang menjadi kemaharajaan terbesar di Nusantara dan juga di Asia Tenggara, serta menjadi negara agraris dan jalur perdagangan dunia."
+131,"Majapahit mencapai masa kejayaannya pada masa kejayaannya pemerintahan Hayam Wuruk dengan patihnya, Gajah Mada (terkenal dengan sunpahnya yang bernama Sumpah Palapa), dengan wilayah kekuasaan meliputi Sumatra, Malaya, Kalimantan, Sulawesi, Nusa Tenggara, Maluku, hingga Papua."
+132,"Majapahit mengalami kemunduran seiring menguatnya pengaruh Islam di Nusantara, lalu akhirnya runtuh setelah ditaklukkan oleh Demak pada tahun 1527."
+133,Pengaruh Hindu-Buddha semakin berkurang seiring dengan masuknya Islam di Nusantara.
+134,"Namun, beberapa kerajaan bercorak Hindu-Buddha masih bertahan bahkan hingga kolonialisme masuk di Nusantara, seperti Blambangan di Pulau Jawa, serta kerajaan-kerajaan Bali bekas Gelgel, yakni Klungkung, Buleleng, Karangasem, Badung, Tabanan, Gianyar, Bangli, Mengwi, dan Jembrana."
+135,"Islam mulai dibawa masuk ke Nusantara oleh para pedagang dan para ulama berkebangsaan Arab, Persia, Gujarat, dan Tionghoa pada abad ke-7 Masehi."
+136,"Aceh menjadi pusat penyebaran agama Islam pertama di Nusantara, serta menjadi lokasi negara kesultanan pertama yang pernah berdiri di Nusantara, yaitu negara Jeumpa yang berdiri pada abad ke-7 dan menguasai wilayah Kabupaten Bieruen saat ini."
+137,"Setelah Sriwijaya runtuh pada abad ke-11, Islam mulai menyebar ke berbagai daerah di Sumatra dan membuat beberapa kerajaan Hindu-Buddha di Sumatra beralih menjadi kesultanan Islam."
+138,Kesultanan Samudra Pasai berawal pada tahun 1267 oleh Sultan Malikul Saleh.
+139,Selanjutnya Kesultanan Aceh (berdiri pada tahun 1496) menjadi kesultanan terbesar di Pulau Sumatra yang mencapai masa kejayaannya di bawah perintah Iskandar Muda (1607–1636).
+140,Wilayah Sumatera bagian utara menjadi pintu utama masukanya arus pedagang muslim dari arah barat seperti Yaman dan Gujarat (India) serta dari arah utara seperti Cina.
+141,Islam mulai diperkenalkan dan menyebar secara luas di kepulauan Indonesia lainnya pada abad ke-15.
+142,"Setelah keruntuhan Majapahit, kesultanan-kesultanan Islam Nusantara mulai berdiri dan berkembang pesat."
+143,Lumajang (berdiri pada akhir abad ke-13) diperkirakan merupakan kesultanan Islam yang paling tua meskipun belum ada bukti-bukti pendukung yang cukup.
+144,"Kesultanan pertama di Pulau Jawa yang dapat dibuktikan oleh para sejarawan adalah Kesultanan Demak dan Cirebon, yang sama-sama berdiri pada abad ke-15 dan menjadi salah satu negara terbesar di Jawa."
+145,"Didirikan oleh Raden Fatah dan dilanjutkan Trenggono, Kesultanan Demak menguasai banyak wilayah di daerah Jawa dan mengislamkan beberapa wilayah di nusantara seperti Kalimantan dan sekitarnya."
+146,"Mataram, yang didirikan pada tahun 1586 oleh Wangsa Mataram, juga menjadi salah satu negara berpengaruh di Jawa, dibawah kepemimpinan Sultan Agung yang mendapatkan gelar Khalifah, sebelum akhirnya terpecah melalui Perjanjian Giyanti."
+147,Berdirinya kesultanan di pantai utara pulau Jawa juga tak terlepas dari pengaruh kedatangan Laksamana Cheng Ho dari Dinasti Ming Cina yang turut menyebarkan Islam di wilayah Asia Tenggara.
+148,"Penyebaran Islam di wilayah nusantara tak terlepas dari bantuan dari tokoh ulama yang dikenal dengan Sunan seperti Sunan Gunungjati, Sunan Ampel, Sunan Kudus dan Sunan lainnya."
+149,"Beberapa kesultanan baru mulai berdiri di Kalimantan sejak abad ke-14 seiring dengan meningkatnya pengaruh Islam, bahkan beberapa kerajaan Hindu-Buddha beralih menjadi kesultanan."
+150,Brunei berhasil mencapai masa kejayaannya pada abad ke-15 setelah menguasai seluruh pesisir Kalimantan.
+151,"Kesultanan Banjar (berdiri pada tahun 1520) yang diislamkan Sultan Demak, berkembang menjadi salah satu negara terbesar di Pulau Kalimantan setelah menguasai pesisir selatan Kalimantan, sebelum akhirnya merosot pada abad ke-18 dan dihapuskan oleh pemerintah kolonial pada tahun 1905."
+152,"Wilayah Kalimantan bagian timur juga mengikuti jejak Banjar dengan berdirinya Kesultanan Kutai, Paser, Gunung Tabur dan Bulungan di abad 16."
+153,Sementara di Kalimantan Barat telah berdiri Kesultanan Sanggau di abad 14 dan Mempawah di abad 18.
+154,Islam diperkirakan berkembang di Sulawesi sejak abad ke-16 dan beberapa kerajaan bercorak Hindu-Buddha atau berkepercayaan tradisional berubah menjadi kesultanan.
+155,"Kesultanan terbesar di Pulau Sulawesi adalah persekutuan negara Gowa–Tallo, yang disebut Makassar oleh para ahli, yang ketika masa kejayaannya mencakup Sulawesi, Kalimantan, Nusa Tenggara, Kepulauan Maluku, hingga Australia."
+156,Berawal dari Sultan Alauddin yang mulai melakukan ekspansi penyebaran Islam ke berbagai wilayah di nusantara bagian timur.
+157,"Dua kesultanan dengan pengaruh besar di Kepulauan Maluku adalah Ternate dan Tidore, yang berpusat di wilayah Maluku Utara saat ini."
+158,"Kedua kesultanan ini mencapai puncak kejayaannya pada abad ke-16 berkat perdagangan rempah-rempah, tetapi kemudian mengalami kemunduran semenjak diadu domba oleh bangsa asing seperti Portugis dan akhirnya runtuh di tangan VOC."
+159,Kesultanan-kesultanan Islam mulai merosot ketika bangsa-bangsa asing masuk dan menguasai tanah Nusantara.
+160,Belanda yang membentuk Hindia Belanda bahkan membubarkan hampir seluruh monarki di wilayah kolonialnya.
+161,Kekristenan umumnya dibawa oleh para misionaris Barat yang menumpang pada kapal pemerintah kolonial.
+162,"Katolik awalnya dibawa ke Nusantara oleh bangsa Portugis, sebelum akhirnya sempat dilarang penyebarannya oleh Pemerintah Belanda yang menguasai Hindia Belanda."
+163,"Setelah Napoleon sempat menguasai Belanda, penyebaran Katolik menjadi lebih leluasa dan misionaris Katolik Belanda melanjutkan misi di Hindia Belanda."
+164,"Sementara itu, Protestantisme dibawa oleh misionaris Protestan yang juga berasal dari Belanda."
+165,Beberapa kerajaan bercorak Kristen muncul sewaktu para misionaris menyebarkan Kekristenan pada rakyat dan keluarga kerajaan di kawasan tertentu.
+166,"Kerajaan-kerajaan Kristen yang terbentuk di Nusantara adalah Bolaang Mongondow, Manganitu, Manado, Moro, Siau, Soya, dan Tagulandang, serta Amanatun, Larantuka, dan Sikka yang bercorak Katolik."
+167,"Demi mencari rempah-rempah yang sulit didapatkan setelah jalur perdagangannya terputus akibat jatuhnya Konstantinopel ke tangan bangsa Turki Utsmani pada tahun 1453, armada Portugis di bawah kepemimpinan Afonso de Albuquerque melakukan ekspedisi ke timur Eropa hingga sampai di negara Melaka dan memulai sejarah kolonialisme di Nusantara dengan menyerang dan menduduki negara itu."
+168,"Demak yang merasa terancam lalu mengirim armada laut ke Melaka pada tahun 1453 untuk menyerang balik armada Portugis, tetapi usahanya gagal."
+169,"Pada tahun 1512, Albuquerque mengirimkan armada laut yang dipimpin oleh António de Abreu dan Francisco Serrão menuju Kepulauan Maluku demi memonopoli perdagangan cengkih dan pala Bayanullah (sultan Ternate saat itu) mengizinkan armada Portugis untuk membangun Benteng Kastela dan memonopoli perdagangan rempah-rempah di Ternate dengan imbalan bantuan militer, karena Ternate pada saat itu sedang bermusuhan dengan Tidore."
+170,"Armada Spanyol yang melakukan ekspedisi ke barat Eropa melanjutkan ekspedisi di bawah kepemimpinan Juan Sebastián Elcano setelah kehilangan banyak pasukan di Filipina dan akhirnya tiba di Kepulauan Maluku pada tanggal 8 November 1521, tetapi kedatangannya ditentang oleh armada Portugis yang terlebih dahulu ada di sana dan menganggap Spanyol melanggar Perjanjian Tordesillas."
+171,Bangsa Spanyol bersekutu dengan Tidore untuk melawan Ternate dan Portugal.
+172,"Tidore–Spanyol berujung pada meletusnya perang antarkubu, yang berakhir dengan kekalahan kubu Tidore–Spanyol dan penandatanganan Perjanjian Zaragoza pada tanggal 22 April 1529, yang membuat armada Spanyol harus angkat kaki dari Maluku dan kembali ke Filipina."
+173,"Sementara itu, armada Portugis ingin meneruskan ambisi memperbesar koloni di Nusantara dengan cara menguasai Selat Sunda dan akhirnya mereka membuat perjanjian dengan Prabu Surawisesa (raja Sunda saat itu) pada tahun 1522, yang mengizinkan pendirian benteng di Banten dan Sunda Kelapa bagi armada Portugis dengan imbalan bantuan militer untuk menghadapi Demak dan Cirebon."
+174,"Namun, kerja sama tersebut tidak pernah terlaksana, karena armada yang dikirim untuk melaksanakan perjanjian itu terseret dalam badai topan di Teluk Benggala dan beberapa pasukan yang tiba di Sunda dengan selamat diserang oleh pasukan Fatahillah yang sedang menyerbu Sunda, sehingga armada Portugis akhirnya meninggalkan Selat Sunda."
+175,"Setelah kepergian Spanyol, bangsa Portugis mulai mencoba untuk memperbesar pengaruh mereka, sementara Ternate mulai menyadari bahwa Portugal sudah terlalu banyak ikut campur urusan internal negara, terutama atas suksesi takhta."
+176,Tewasnya Khairun Jamil (sultan Ternate) oleh pasukan Portugis memantik kemarahan rakyat Ternate dan memicu Perang Ternate–Portugal.
+177,Ternate dan sekutunya berhasil memenangkan perang dan mengusir sebagian besar pasukan Portugis yang lari menuju Nusa Tenggara.
+178,Pengaruh bangsa Portugis di Nusantara semakin berkurang setelah bangsa Belanda mulai masuk ke Nusantara dan akhirnya hanya tersisa di wilayah Pulau Timor bagian timur menurut Perjanjian Lisboa.
+179,"Berbekal rute pelayaran armada Portugis sebelumnya, armada kapal Belanda di bawah kepemimpinan Cornelis de Houtman memulai ekspedisi pertamanya untuk mencari rempah-rempah di Timur, hingga akhirnya sampai di Banten pada tanggal 27 Juni 1596, serta berhasil menyusuri pesisir utara Jawa hingga ke Bali dalam kurun waktu setahun."
+180,"Tabiat buruk Houtman dan anak buahnya membuat mereka sering berseteru dengan penduduk lokal di sepanjang perjalanan, meskipun mereka akhirnya sukses membawa serta peti-peti berisi rempah dalam jumlah banyak kembali Belanda."
+181,"Pada tahun 1598–1600, para pedangang Belanda membentuk rombongan ekspedisi yang dipimpin oleh Jacob Corneliszoon van Neck agar dapat mengulang kesuksesan tersebut."
+182,Mereka berusaha menarik hati para penduduk dan penguasa lokal untuk tidak mengulangi kesalahan yang dilakukan armada Portugis dan rombongan Houtman.
+183,"Setelah itu, berbagai kapal milik para pedagang Belanda lainnya menyusul untuk memperoleh dan menguasai rempah-rempah di Nusantara."
+184,Dewan Negara Belanda membentuk suatu serikat dagang pada tanggal 20 Maret 1602bernama Perusahaan Hindia Timur Belanda (VOC) untuk mengurangi persaingan di antara para pedagang rempah Belanda.
+185,"Dalam piagam ""oktroi"" (octrooi), VOC diperbolehkan untuk memiliki angkatan perang sendiri, mencetak mata uang sendiri, serta memonopoli perdagangan dan menekan penguasa-penguasa lokal di kawasan Nusantara."
+186,"Pada tahun 1603, VOC mulai membangun pos-pos perdagangan di Banten, Ambon, Jayakarta, dan lain-lain."
+187,"Sejak tahun 1604, VOC bersaing ketat dengan armada Perusahaan Hindia Timur Britania (EIC) yang juga tiba di Nusantara demi tujuan yang sama."
+188,"Pada tanggal 19 Desember 1610, Pieter Both ditunjuk sebagai gubernur jenderal pertama di Nusantara, yang kemudian menetapkan Ambon sebagai pusat pemerintahan."
+189,"Pada tanggal 30 Mei 1619, Jan Pieterszoon Coen (gubernur jenderal yang baru) memerintahkan armada kapal VOC untuk menyerang Jayapura dan Banten, serta mendirikan Batavia yang kelak menjadi pusat pemerintahan."
+190,"Pada tahun 1620, VOC dan EIC membuat perjanjian perdagangan rempah-rempah, tetapi hubungan tersebut putus sejak armada Inggris berangsur-angsur meninggalkan wilayah Nusantara setelah terjadinya Pembantaian Amboina terhadap beberapa orang Inggris pada tahun 1623."
+191,"Istilah ""Hindia Belanda"" (Nederlandsch-Indië) mulai digunakan di dalam dokumen resmi VOC sejak awal tahun 1620-an."
+192,VOC menjadi badan usaha swasta yang sangat sukses selama abad ke-17 dan bahkan menjadi perusahaan terkaya di dunia pada tahun 1669.
+193,VOC lihai dalam melakukan politik adu domba antarkerajaan kecil dan memaksa para penguasa lokal untuk menandatangani perjanjian damai (misalnya Perjanjian Painan).
+194,"VOC saat itu menguasai Pulau Jawa, Painan, Makassar, Manado, Pulau Seram, dan Pulau Buru."
+195,"Pasukan Mataram pernah merencanakan penyerbuan ke markas VOC di Batavia sebanyak dua kali pada tahun 1628 dan 1629, tetapi akhirnya gagal karena kekurangan perbekalan."
+196,"Sebagai gantinya, VOC beberapa kali mencampuri urusan kerajaan di Mataram berkali-kali, seperti membantu dalam perang takhta melawan pasukan Amangkurat III pada tahun 1704–1708, membantu dalam perang takhta melawan kerabat raja yang memberontak pada tahun 1719–1723, serta ikut campur dalam rangkaian konflik antaranggota keluarga kerajaan Mataram pada tahun 1749–1757."
+197,"Perjanjian Giyanti (13 Februari 1755) dan Perjanjian Salatiga (17 Maret 1757) yang ditandatangani bersama pihak VOC membuat negara Mataram terpecah menjadi beberapa negara baru, yaitu Mangkunagaran, Yogyakarta, dan Surakarta."
+198,"Mulai tahun 1730, kejayaan VOC mulai merosot akibat korupsi di tubuh VOC, ketidaksiapan dalam memenuhi permintaan pasar yang berubah, serta pergolakan yang terus-menerus terjadi di Eropa dan di Nusantara."
+199,"Pergolakan di Nusantara, misalnya, yaitu pembantaian orang-orang Tionghoa di Batavia pada tahun 1740 yang dikenal dengan peristiwa Geger Pacinan, yang kemudian memicu Perang Jawa (1741–1743) dan Perang Kuning (1750)."
+200,"Lalu pada tahun 1771–1772, Perang Bayu pecah di Blambangan dan memakan korban jiwa yang sangat besar dari penduduk lokal dan pasukan VOC."

@@ -533,7 +533,14 @@ async def download_highlighted_report(job_id: int, db: Session = Depends(get_db)
                 for inst in text_instances:
                     annot = page.add_highlight_annot(inst)
                     annot.set_colors(stroke=current_color) 
-                    annot.set_info(content=f"Sumber: {source_title}\nKemiripan: {round(comp.cosine_similarity * 100, 2)}%")
+                    current_date = fitz.get_pdf_now()
+                    annot.set_info(
+                        title="WordLens Checker", # Ubah nama Author sesuai aplikasimu
+                        content=f"Sumber: {source_title}\nKemiripan: {round(comp.cosine_similarity * 100, 2)}%",
+                        creationDate=current_date,  # Tanggal dibuat
+                        modDate=current_date        # Tanggal dimodifikasi
+                    )
+                    annot.set_info(content=f"Sumber: {source_title}")
                     annot.update()
 
         # --- 2. MEMBUAT HALAMAN RINGKASAN ALA TURNITIN ---
